@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:weightSum="20"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_weight="19"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TableLayout
+        android:stretchColumns="*"
+        android:id="@+id/pictureTool"
+        android:visibility="invisible"
+        android:background="#4b4a4a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TableRow>
+
+            <ImageButton
+                android:id="@+id/rotateImageButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_rotateright"
+                android:text="Rotate Image Button" />
+
+            <ImageButton
+                android:id="@+id/favoriteImageButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_unfavorite"
+                android:text="Color Image Button" />
+
+            <ImageButton
+                android:id="@+id/colorImageButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_filtercolor"
+                android:text="Color Image Button" />
+
+            <ImageButton
+                android:id="@+id/deleteImageButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:scaleType="centerInside"
+                android:src="@android:drawable/ic_menu_delete"
+                android:text="Delete Image Button" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

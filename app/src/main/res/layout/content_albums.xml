@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:weightSum="10"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Albums"
+    tools:showIn="@layout/app_bar_albums">
+
+    <ViewFlipper
+        android:id="@+id/ImagesViewFlipper"
+        android:background="#383836"
+        android:layout_weight="3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    </ViewFlipper>
+
+    <GridView
+        android:id="@+id/AlbumsView"
+        android:numColumns="3"
+        android:layout_weight="7"
+        android:horizontalSpacing="2dp"
+        android:verticalSpacing="2dp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+</LinearLayout>

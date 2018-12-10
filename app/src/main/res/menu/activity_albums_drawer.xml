@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/icon_camera_nav"
+            android:title="Máy ảnh" />
+        <item
+            android:id="@+id/nav_location"
+            android:icon="@drawable/icon_location_nav"
+            android:title="Vị trí" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/icon_slideshow_nav"
+            android:title="Trình chiếu" />
+        <item
+            android:id="@+id/nav_favorite"
+            android:icon="@drawable/icon_favorite_nav"
+            android:title="Mục yêu thích" />
+    </group>
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_security"
+                android:icon="@drawable/icon_security_nav"
+                android:title="Bảo mật" />
+            <item
+                android:id="@+id/nav_setting"
+                android:icon="@drawable/icon_setting_nav"
+                android:title="Cài đặt" />
+            <item
+                android:id="@+id/nav_help"
+                android:icon="@drawable/icon_help_nav"
+                android:title="Trợ giúp" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:weightSum="20"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageColorView"
+        android:layout_weight="19"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TableLayout
+        android:id="@+id/colorFilterImageTool"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#4b4a4a"
+        android:layout_gravity="bottom"
+        android:stretchColumns="*">
+
+        <TableRow>
+
+            <ImageButton
+                android:id="@+id/colorDarkenButton"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_gravity="center"
+                android:background="@null" />
+
+            <ImageButton
+                android:id="@+id/colorLightenButton"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_gravity="center"
+                android:background="@null" />
+
+            <ImageButton
+                android:id="@+id/colorOverlayButton"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_gravity="center"
+                android:background="@null" />
+
+            <ImageButton
+
+                android:id="@+id/colorScreenButton"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_gravity="center"
+                android:background="@null" />
+
+            <ImageButton
+
+                android:id="@+id/colorMultiplyButton"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_gravity="center"
+                android:background="@null" />
+        </TableRow>
+
+
+    </TableLayout>
+</FrameLayout>
